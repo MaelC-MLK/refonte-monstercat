@@ -26,6 +26,12 @@ module.exports = {
         backgroundSize: {
           'fond': 'cover',
         },
+        backgroundPosition: {
+          'fond': '200%',
+        },
+        screens: {
+          'custom': '532px',
+        },
     },
   },
   plugins: [],
