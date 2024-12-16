@@ -7,7 +7,7 @@ import { monumentextended } from "../fonts/font";
 
 export default function Footer() {  
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-black text-white pt-8 pb-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between mb-8">
           <ul className="flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-6 mb-8 md:mb-0">
@@ -21,15 +21,17 @@ export default function Footer() {
           </ul>
         </div>
         <div className="mb-8">
-          <h2 className={`${monumentextended.className} tracking-wide text-md text-gray-400 font-bold mb-2`}>MONSTERCAT NEWS</h2>
-          <p className="mb-4">Don't miss a thing, stay up to date with the latest news from us.</p>
-          <form className="flex">
-            <input type="email" placeholder="Enter email" className="p-2 flex-grow rounded-l-md" />
-            <button type="submit" className="p-2 bg-white text-black rounded-r-md">→</button>
+          <h2 className={`${monumentextended.className} tracking-wide text-base text-gray-400 font-bold mb-2`}>MONSTERCAT NEWS</h2>
+          <p className="mb-4 text-sm italic text-gray-50 tracking-widest">Don't miss a thing, stay up to date with the latest news from us.</p>
+          <form className="border-b border-gray-400 flex space-x-2 text-lg tracking-wider">
+            <input type="email" placeholder="Enter email" className="py-3 px-1 flex-grow rounded-l-md bg-transparent  outline-none" />
+            <button type="submit" className="p-2 bg-transparent text-white rounded-r-md">→</button>
           </form>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="flex space-x-4 mb-4 md:mb-0">
+        <div className="border-t border-white mt-12 mb-10"></div>
+        <div className="mb-16">
+        <p className=" text-sm italic mb-4">2011 - 2024 © Monstercat, All Rights Reserved</p>
+        <div className="flex space-x-4 md:mb-0">
         <Link href="https://www.youtube.com/user/MonstercatMedia" target="_blank" rel="noopener noreferrer">
         <FaYoutube size="1.3em" />
         </Link>
@@ -61,10 +63,9 @@ export default function Footer() {
           <FaSoundcloud size="1.3em" />
         </Link>
           </div>
-          <p className="text-sm text-center md:text-left">2011 - 2024 © Monstercat, All Rights Reserved</p>
         </div>
-        <div className="mt-8 text-xs">
-          <p>We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast Salish peoples, including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations, on which Monstercat's Vancouver HQ stands.</p>
+        <div className="mt-8 text-xs text-center text-gray-200 italic">
+          <p className='mb-4'>We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast Salish peoples, including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations, on which Monstercat's Vancouver HQ stands.</p>
           <p>We acknowledge the unceded and ancestral territories of the Gabrielino/Tongva peoples on which our LA team live and work.</p>
         </div>
       </div>

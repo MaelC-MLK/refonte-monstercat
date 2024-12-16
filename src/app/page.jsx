@@ -15,7 +15,7 @@ export default function Home() {
       <LinkStream/>
       <Tracklist/>
       <MusicLauncher/>
-      <div className="border-t border-white mx-6 mt-32 mb-10"></div>
+      <div className="border-t border-white mx-4 mt-28 mb-8"></div>
       <Footer/>
     </div>
   );
