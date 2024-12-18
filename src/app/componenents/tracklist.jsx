@@ -24,8 +24,8 @@ const tracks = [
 
 export default function Tracklist() {
   return (
-    <div className="bg-black px-4 mt-10">
-      <h3 className={`uppercase text-2xl text-white ${monumentextended.className}`}>Track List</h3>
+    <div className="bg-black mx-auto px-4 mt-10">
+      <h3 className={`uppercase text-2xl text-white md:text-5xl md:mb-10 md:mt-20 md:tracking-wider ${monumentextended.className}`}>Track List</h3>
       <ul className="mt-4 px-2">
         {tracks.map((track) => (
           <li key={track.number} className="flex items-center justify-between text-white py-2">

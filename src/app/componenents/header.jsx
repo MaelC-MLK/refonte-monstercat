@@ -6,13 +6,15 @@ import { LuPlay } from "react-icons/lu";
 export default function Header() {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center md:items-center gap-6 md:gap-20 mx-4 md:mr-96 md:mt-20">
+      <div className="flex flex-col md:flex-row justify-center md:items-center gap-6 md:gap-20 mx-4 md:mt-20">
       <div className="flex flex-col gap-8
        md:flex-row md:items-end md:gap-0">
-          <Image src="/cover.webp" width={800} height={800} alt="Logo" />
-          <p className="text-white italic text-sm md:text-lg md:-rotate-90 md:origin-bottom-right">
-            <span className="text-custom-green">Instinct </span>— Released May 22, 2020
-          </p>
+      <Image src="/cover.webp" width={650} height={650} alt="Logo" />
+      <div className="relative">
+        <p className="text-white italic text-sm md:text-lg md:absolute md:bottom-0 md:right-[22rem] md:transform md:-rotate-90 md:origin-bottom-left whitespace-nowrap">
+          <span className="text-custom-green whitespace-nowrap">Instinct </span>— Released May 22, 2020
+        </p>
+      </div>
         </div>
         <div className="flex flex-col justify-start items-start text-start">
         <p
@@ -22,7 +24,7 @@ export default function Header() {
             <span className="text-white block md:hidden">
               Level Days
             </span>
-            <span className="hidden md:block" style={{ WebkitTextStroke: '1px white' }}>
+            <span className="hidden md:block md:whitespace-nowrap" style={{ WebkitTextStroke: '1px white' }}>
               Level Days
             </span>
           </p>
